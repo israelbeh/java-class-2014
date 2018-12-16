@@ -1,0 +1,6 @@
+
+public class Names {
+	String boy;
+	String girl;
+	
+}

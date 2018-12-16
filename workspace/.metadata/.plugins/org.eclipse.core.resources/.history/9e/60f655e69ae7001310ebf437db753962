@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+
+public class Student {
+
+	public static void main(String[] args) {
+		
+		Scanner oScan = new Scanner(System.in);
+		
+		String sTeamName;
+		int iNumOfPlayers;
+		int iWins;
+		int iLosses;
+		String sLeague;
+		
+		System.out.println("What is the team name?");
+		sTeamName = oScan.nextLine();
+		
+		System.out.println("How many players?");
+		iNumOfPlayers = oScan.nextInt();
+		
+		System.out.println("How many wins?");
+		iWins = oScan.nextInt();
+		
+		System.out.println("How many losses?");
+		iLosses = oScan.nextInt();
+		
+		oScan.nextLine();
+		
+		System.out.println("What league? A/N");
+		sLeague = oScan.nextLine();
+		
+		Main oMain = new Main (iNumOfPlayers, iWins, iLosses, sLeague);
+
+	}
+
+}

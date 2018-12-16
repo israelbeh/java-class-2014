@@ -1,0 +1,33 @@
+
+public class Team {
+
+	protected String TeamName;
+	protected int NumOfMembers;
+	
+	
+	public String getTeamName() {
+		return this.TeamName;
+	}
+
+
+	public void setTeamName(String teamName) {
+		this.TeamName = teamName;
+	}
+
+
+	public int getNumOfMembers() {
+		return this.NumOfMembers;
+	}
+
+
+	public void setNumOfMembers(int numOfMembers) {
+		this.NumOfMembers = numOfMembers;
+	}
+
+
+	Team (String sTeamName, int iNumOfMembers)
+	{
+	this.TeamName = sTeamName;
+	this.NumOfMembers = iNumOfMembers;
+	}
+}

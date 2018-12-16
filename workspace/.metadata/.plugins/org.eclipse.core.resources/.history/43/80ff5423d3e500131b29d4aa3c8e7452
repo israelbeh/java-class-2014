@@ -1,0 +1,116 @@
+import java.util.Scanner;
+
+public class Quiz3 {
+
+	public static void main(String[] args)
+	{
+		/*Write a program. 
+
+		I would start sooner than later.
+
+		Write a program that does the following:
+
+		1. Prompt the user to enter a name of a boy
+		2. Prompt the user to enter a name of a girl
+		3. Create an array that will hold both names 
+		3. For each name in the array, I want you to check each character in the name.
+		4. You need to count all of the T, R, U, E, L, O, V characters
+		5.If the count is 10 or more then print:
+		Name + OtherName = True Love
+
+		6. if the count is 5-9 then print:
+		Name + OtherName = Just Friends
+
+		7. Otherwise print
+		Name + OtherName = Siblings*/
+		
+		Scanner oScan = new Scanner(System.in);
+		Names aiName[] = new Names[1];//Create an array that will hold both names
+		int iCount = 0;
+		String TrueLoves;
+		
+		
+		for (iCount = 0; iCount < aiName.length; iCount ++)
+		{
+			//Prompt the user to enter a name of a boy
+			aiName[iCount] = new Names();
+			System.out.println("Enter the name of a boy");
+			aiName[iCount].boy = oScan.nextLine();
+			
+			//Prompt the user to enter a name of a girl
+			System.out.println("Enter the name of a girl");
+			aiName[iCount].girl = oScan.nextLine();
+			
+			System.out.println(aiName[iCount].boy + " " + aiName[iCount].girl);
+			
+			
+			
+			/*int iCharCountT = 0;
+			TrueLoves = aiName[iCount].boy + aiName[iCount].girl;
+			for(int iC = 0; iC < TrueLoves.length(); iC++){
+				if (TrueLoves.charAt(iC) == 'T')  //"U"  "E"  
+				//"L"  "O"  "V");
+				iCharCountT++;
+				
+				System.out.println(iCharCountT);
+			}
+			int iCharCountR = 0;
+			TrueLoves = aiName[iCount].boy + aiName[iCount].girl;
+			for(int iR = 0; iR < TrueLoves.length(); iR++){
+			if (TrueLoves.charAt(iR) == 'R')  //"U"  "E"  
+					//"L"  "O"  "V");
+			iCharCountR++;
+			}
+			int iCharCountU = 0;
+			TrueLoves = aiName[iCount].boy + aiName[iCount].girl;
+			for(int iU = 0; iU < TrueLoves.length(); iU++)
+			{
+				if (TrueLoves.charAt(iU) == 'U')  //"U"  "E"  
+				//"L"  "O"  "V");
+			iCharCountU++;
+			}	
+			int iCharCountE = 0;
+			TrueLoves = aiName[iCount].boy + aiName[iCount].girl;
+			for(int iE = 0; iE < TrueLoves.length(); iE++){
+				if (TrueLoves.charAt(iE) == 'E')  //"U"  "E"  
+				//"L"  "O"  "V");
+				iCharCountE++;
+				
+				System.out.println(iCharCountE);
+			}
+			int iCharCountL = 0;
+			TrueLoves = aiName[iCount].boy + aiName[iCount].girl;
+			for(int iO = 0; iO < TrueLoves.length(); iO++){
+			if (TrueLoves.charAt(iO) == 'L')  //"U"  "E"  
+					//"L"  "O"  "V");
+			iCharCountL++;
+			}
+			int iCharCountO = 0;
+			TrueLoves = aiName[iCount].boy + aiName[iCount].girl;
+			for(int iC = 0; iC < TrueLoves.length(); iC++)
+			{
+				if (TrueLoves.charAt(iC) == 'O')  //"U"  "E"  
+				//"L"  "O"  "V");
+			iCharCountO++;
+			}	
+			int iCharCountV = 0;
+				TrueLoves = aiName[iCount].boy + aiName[iCount].girl;
+				for(int iV = 0; iV < TrueLoves.length(); iV++){
+					if (TrueLoves.charAt(iV) == 'V')  //"U"  "E"  
+					//"L"  "O"  "V");
+					iCharCountV++;
+					
+					
+					
+				}
+				System.out.println(iCharCountT + " T "+ iCharCountR + " R " +
+						iCharCountU + " U " + iCharCountE + " E "+ iCharCountL + " L " +
+						iCharCountO + " O "+ iCharCountV + " V " );*/
+		}	
+		}
+		
+		
+
+	}
+
+

@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+
+public class Sports extends Team {
+	
+	private int Wins;
+	private int Losses;
+	private double WinsLossPct;
+
+	public int getWins() {
+		return Wins;
+	}
+
+	public void setWins(int wins) {
+		Wins = wins;
+	}
+
+	public int getLosses() {
+		return Losses;
+	}
+
+	public void setLosses(int losses) {
+		Losses = losses;
+	}
+
+	public double getWinsLossPct() {
+		return WinsLossPct;
+	}
+
+	public void setWinsLossPct(double winsLossPct) {
+		WinsLossPct = winsLossPct;
+	}
+
+	Sports(String sTeamName, int iNumOfMembers) {
+		super(sTeamName, iNumOfMembers);
+		
+	}
+
+}

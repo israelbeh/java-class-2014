@@ -1,0 +1,13 @@
+
+public class Team {
+
+	protected String TeamName;
+	protected int NumOfMembers;
+	
+	
+	Team (String sTeamName, int iNumOfMembers)
+	{
+	this.TeamName = sTeamName;
+	this.NumOfMembers = iNumOfMembers;
+	}
+}

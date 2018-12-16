@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+
+public class Sports extends Team {
+	
+	private int Wins;
+	private int Losses;
+	private double WinsLossPct;
+
+	public int getWins() {
+		return this.Wins;
+	}
+
+	public void setWins(int iWins) {
+		this.Wins = iWins;
+	}
+
+	public int getLosses() {
+		return this.Losses;
+	}
+
+	public void setLosses(int iLosses) {
+		this.Losses = iLosses;
+	}
+
+	public double getWinsLossPct() {
+		return this.WinsLossPct;
+	}
+
+	public void setWinsLossPct(int iWins, int iLosses) {
+		this.Wins = iWins;
+		this.Losses = iLosses;
+		this.WinsLossPct = (double) this.Wins/ ((double) this.Wins + (double) this.Losses);
+	}
+
+	Sports(String sTeamName, int iNumOfMembers, int iWins, int iLosses) {
+		super(sTeamName, iNumOfMembers);
+		setWinsLossPct(iWins, iLosses);
+		
+		
+	}
+
+}

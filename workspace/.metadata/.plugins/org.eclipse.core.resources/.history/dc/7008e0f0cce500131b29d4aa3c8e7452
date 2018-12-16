@@ -1,0 +1,59 @@
+import java.util.Scanner;
+
+
+public class Quiz3 {
+
+	public static void main(String[] args)
+	{
+		/*Write a program. 
+
+		I would start sooner than later.
+
+		Write a program that does the following:
+
+		1. Prompt the user to enter a name of a boy
+		2. Prompt the user to enter a name of a girl
+		3. Create an array that will hold both names 
+		3. For each name in the array, I want you to check each character in the name.
+		4. You need to count all of the T, R, U, E, L, O, V characters
+		5.If the count is 10 or more then print:
+		Name + OtherName = True Love
+
+		6. if the count is 5-9 then print:
+		Name + OtherName = Just Friends
+
+		7. Otherwise print
+		Name + OtherName = Siblings*/
+		
+		Scanner oScan = new Scanner(System.in);
+		Names aiName[] = new Names[1];//Create an array that will hold both names
+		int iCount = 0;
+		
+		for (iCount = 0; iCount < aiName.length; iCount ++)
+		{
+			//Prompt the user to enter a name of a boy
+			aiName[iCount] = new Names();
+			System.out.println("Enter the name of a boy");
+			aiName[iCount].boy = oScan.nextLine();
+			
+			//Prompt the user to enter a name of a girl
+			System.out.println("Enter the name of a girl");
+			aiName[iCount].girl = oScan.nextLine();
+			
+			System.out.println(aiName[iCount].boy + " " + aiName[iCount].girl);
+			int iCharCount = 0;
+			
+			for(int iC = 0; iC < aiName[iCount].boy.length() + aiName[iCount].girl.length(); iC++)
+				if (aiName[iCount].boy.charAt(iC) + aiName[iCount].girl.charAt(iC) == 'T'); // 'R'  "U"  "E"  
+				//"L"  "O"  "V");
+				iCharCount++;
+				
+				System.out.println(iCharCount);
+				
+		}
+		
+		
+
+	}
+
+}

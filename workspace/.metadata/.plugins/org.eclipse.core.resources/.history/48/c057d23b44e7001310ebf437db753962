@@ -1,0 +1,5 @@
+
+public class Avenger extends SuperHero// this is how you give inheritance
+{
+	boolean isMarvel;
+}

@@ -1,0 +1,65 @@
+import java.util.Scanner;
+
+/* Author: Israel Beh
+ Description: Homework 6 asks us to use a combination of methods and constructors to gather information from user
+ and then print it off.
+ */
+public class BaseBall {
+
+	public static void main(String[] args) {
+		team aiTeam[] = new team [2];
+		Scanner oScan = new Scanner(System.in);
+		String sTeamName;
+		int iWins;
+		int iLosses;
+		int iPtsFor;
+		int iPtsAgainst;
+		int iRuns;
+		String sScorer;
+		//Team 1
+		System.out.println("What is the team name?");
+		sTeamName = oScan.nextLine();
+		aiTeam[0] = new team(sTeamName);
+		
+		System.out.println("How many wins?");
+		iWins = oScan.nextInt();
+		System.out.println("How many losses?");
+		iLosses = oScan.nextInt();
+		aiTeam[0].setWinsLosses(iLosses, iWins);
+		
+		System.out.println("How many runs for?");
+		iPtsFor = oScan.nextInt();
+		System.out.println("How many runs Against?");
+		iPtsAgainst = oScan.nextInt();
+		aiTeam[0].addRuns(iPtsFor, iPtsAgainst);
+		
+		System.out.println("Team Name: " + aiTeam[0].getTeam());
+		System.out.println("Wins: " + aiTeam[0].getWins());
+		System.out.println("Losses: " + aiTeam[0].getLosses());
+		aiTeam[0].getAllRuns();
+		
+		//Team 2
+		System.out.println("What is the team name?");
+		sTeamName = oScan.nextLine();
+		System.out.println("How many wins?");
+		iWins = oScan.nextInt();
+		System.out.println("How many losses?");
+		iLosses = oScan.nextInt();
+		System.out.println("How many runs?");
+		iRuns = oScan.nextInt();
+		oScan.nextLine();
+		System.out.println("Who Scored? Home or Opponent?");
+		sScorer = oScan.nextLine();
+		
+		aiTeam[1] = new team(sTeamName, iWins, iLosses, iRuns, sScorer);
+		System.out.println("Team Name: " + aiTeam[1].getTeam());
+		System.out.println("Wins: " + aiTeam[1].getWins());
+		System.out.println("Losses: " + aiTeam[1].getLosses());
+		aiTeam[1].getAllRuns();
+		
+		
+		
+
+	}
+
+}

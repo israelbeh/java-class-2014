@@ -1,0 +1,38 @@
+
+public class Baseball extends Sports {
+
+	private String League;
+	
+	
+	public String getLeague() {
+		return this.League;
+	}
+
+
+	public void setLeague(String league) {
+		this.League = league;
+	}
+
+
+	Baseball(String sTeamName, int iNumOfMembers, int iWins, int iLosses, String sLeague) {
+		super(sTeamName, iNumOfMembers, iWins, iLosses);
+		/*if (sLeague.equalsIgnoreCase("A"))
+			sLeague = "American";
+		else if (sLeague.equalsIgnoreCase("N"))
+			sLeague = "National";*/
+		this.League = sLeague;
+	}
+	
+	void displayInfo()
+	{
+		System.out.println("Here is what you need to know about the baseball team:");
+		System.out.println("Name: " + this.TeamName);
+		System.out.println("Number of players:  " + this.NumOfMembers);
+		System.out.println("Number of wins: " + this.getWins());
+		System.out.println("Number of losses: " + this.getLosses());
+		System.out.println("League: " + this.getLeague());
+		System.out.println("Win/Loss Percentage: " + this.getWinsLossPct());
+	}
+
+
+}

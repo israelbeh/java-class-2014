@@ -1,0 +1,23 @@
+
+public class Baseball extends Sports {
+
+	private String League;
+	
+	
+	public String getLeague() {
+		return League;
+	}
+
+
+	public void setLeague(String league) {
+		League = league;
+	}
+
+
+	Baseball(String sTeamName, int iNumOfMembers) {
+		super(sTeamName, iNumOfMembers);
+		
+	}
+
+
+}
